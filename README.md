@@ -28,7 +28,7 @@ Once you've followed the instructions above, open Xcode, and select the RSDKv3 t
 If you want to use the **Command Line Tools** instead, run the following command: `xcodebuild -project RSDKv3.xcodeproj -scheme RSDKv3 DSTROOT="./build" -configuration Release DEPLOYMENT_LOCATION=YES`. The app will then be created in `[Home folder]/Library/Developer/Xcode/DerivedData/[RSDKv3-(and then a whole bunch of letters)]`. **Press (⌘+⇧+.) to see the `~/Library` folder.**
 
 ### Build flags for the Command Line Tools
-To add flags into your build command, add: `OTHER_CFLAGS=` at the end of your build command, for example: `xcodebuild -project RSDKv3.xcodeproj -scheme RSDKv3 DSTROOT="./build" -configuration Release DEPLOYMENT_LOCATION=YES OTHER_CFLAGS="-DRETRO_DEV_EXTRA=\\\"Darwin\\ -\\ AppleClang\\\""`.
+To add flags into your build command, use: `OTHER_CFLAGS=` at the end of your build command, for example: `xcodebuild -project RSDKv3.xcodeproj -scheme RSDKv3 DSTROOT="./build" -configuration Release DEPLOYMENT_LOCATION=YES OTHER_CFLAGS="-DRETRO_DEV_EXTRA=\\\"Darwin\\ -\\ AppleClang\\\""`.
 
 **A list of build flags can be found [here](https://github.com/RSDKModding/RSDKv3-Decompilation/blob/master/dependencies/mac/README.md#customization).**
 
