@@ -1,5 +1,5 @@
 # RSDKv3-Building-Guide-for-macOS
-This is a guide on how to build RSDKv3 on **macOS** since I can't find any videos or tutorial except for the RSDKv3-Decompilation repo but this tutorial will be much more easier for people to understand. I compiled it myself on macOS 27.3 Apple Silicon and could probably work for other Macs.
+This is a guide on how to build RSDKv3 on **macOS** since I can't find any videos or tutorial except for the RSDKv3-Decompilation repo but this tutorial will be much more easier for people to understand. I compiled it myself on macOS 27.3 Apple Silicon and can work for other Macs.
 
 ## Prerequisites
 **Xcode**: [Download](https://apps.apple.com/fr/app/xcode/id497799835?mt=12) it, and don't open it yet, we will need it for later.
