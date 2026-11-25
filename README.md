@@ -32,6 +32,8 @@ To add flags into your build command, use: `OTHER_CFLAGS=` at the end of your bu
 
 **A list of build flags can be found [here](https://github.com/RSDKModding/RSDKv3-Decompilation/blob/master/dependencies/mac/README.md#customization).**
 
+**Also if you want to use the Origins Data files on the decomp, check [this](https://gamebanana.com/tuts/16686).**
+
  
 
 
