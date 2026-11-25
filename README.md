@@ -9,16 +9,16 @@ This is a guide on how to build RSDKv3 on **macOS** since I can't find any video
 ## Cloning the repository
 Open Terminal, copy and paste this in Terminal: `git clone --recursive https://github.com/RSDKModding/RSDKv3-Decompilation`.
 
-But if you already cloned the repo before and it's not deleted then copy and paste this in the repo: `git submodule update --init --recursive`.
+But if you already cloned the repo before and it's not deleted then copy and paste this in the root of the repo folder: `git submodule update --init --recursive`.
 
 ## Getting the dependencies
-**SDL2**: [Download](https://github.com/libsdl-org/SDL/releases/tag/release-2.32.10) it as a **.dmg** file. Then open the .dmg file and move the SDL2.framework to `[root of repo]/dependencies/mac/`.
+* **SDL2**: [Download](https://github.com/libsdl-org/SDL/releases/tag/release-2.32.10) it as a **.dmg** file. Then open the .dmg file and move the SDL2.framework to `[root of repo]/dependencies/mac/`.
 
-**libogg**: [Download](https://xiph.org/downloads/) and extract it as `[root of repo]/dependencies/mac/libogg`. Then go inside the folder and run the "configure" file by simply double-clicking on it.
+* **libogg**: [Download](https://xiph.org/downloads/) and extract it as `[root of repo]/dependencies/mac/libogg`. Then, run this command: `cd ~/RSDKv3-Decompilation/dependencies/mac/libogg && ./configure`.
+  
+* **libvorbis**: [Download](https://xiph.org/downloads/) and extract it as `[root of repo]/dependencies/mac/libvorbis`.
 
-**libvorbis**: [Download](https://xiph.org/downloads/) and extract it as `[root of repo]/dependencies/mac/libvorbis`.
-
-**libtheora**: [Download](https://github.com/xiph/theora/releases/tag/v1.1.0) the .zip file and extract it as `[root of repo]/dependencies/mac/libtheora`.
+* **libtheora**: [Download](https://github.com/xiph/theora/releases/tag/v1.1.0) the .zip file and extract it as `[root of repo]/dependencies/mac/libtheora`.
 
 <img src="https://github.com/C00LKID-oss-alt/RSDKv3-Building-Guide-for-macOS/blob/main/images/Dependencies-macOS.png" width="400">
 
@@ -26,7 +26,11 @@ At the end, it should look like this.
 
 ## Compiling the game
 ### Xcode:
-Once you've followed the instructions above, open Xcode, and select the RSDKv3 target. Then, **change the deployment target to the recommended OS version** and build the project by pressing the "Run" button or (⌘+B). The app will then be created in `~/Library/Developer/Xcode/DerivedData/RSDKv3-[and a whole bunch of letters]/Build/Products/Release/RSDKv3.app`. **Press (⌘+⇧+.) to see the `~/Library` folder.**
+Once you've followed the instructions above, open Xcode, and select the RSDKv3 target. Then, **change the deployment target to the recommended OS version**:
+
+<img src="https://github.com/C00LKID-oss-alt/RSDKv3-Building-Guide-for-macOS/blob/main/images/deployment-target.png" width="600">
+
+And then, build the project by pressing the "Run" button or (⌘+B). The app will then be created in `~/Library/Developer/Xcode/DerivedData/RSDKv3-[and a whole bunch of letters]/Build/Products/Release/RSDKv3.app`.**Press (⌘+⇧+.) to see the `~/Library` folder in your home folder.**
 
 ### Command Line Tools:
 Before, it's best you **change the deployment target to the recommended OS version** in Xcode first.
