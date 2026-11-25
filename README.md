@@ -22,6 +22,8 @@ But if you already cloned the repo before and it's not deleted then copy and pas
 
 <img src="https://github.com/C00LKID-oss-alt/RSDKv3-Building-Guide-for-macOS/blob/main/images/Dependencies-macOS.png" width="400">
 
+At the end, it should look like this.
+
 ## Compiling the game
 ### Xcode:
 Once you've followed the instructions above, open Xcode, and select the RSDKv3 target. Then, **change the deployment target to the recommended OS version** and build the project by pressing the "Run" button or (⌘+B). The app will then be created in `~/Library/Developer/Xcode/DerivedData/RSDKv3-[and a whole bunch of letters]/Build/Products/Release/RSDKv3.app`. **Press (⌘+⇧+.) to see the `~/Library` folder.**
