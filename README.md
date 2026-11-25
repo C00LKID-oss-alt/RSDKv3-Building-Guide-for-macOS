@@ -22,10 +22,10 @@ But if you already cloned the repo before and it's not deleted then copy and pas
 
 ## Compiling the game
 ### Xcode:
-Once you've followed the instructions above, open Xcode, and select the RSDKv3 target. Then, **change the deployment target to the recommended OS version** and build the project by pressing the "Run" button or (⌘+B). The app will then be created in `[Home folder]/Library/Developer/Xcode/DerivedData/[RSDKv3-(and then a whole bunch of letters)]`. **Press (⌘+⇧+.) to see the `~/Library` folder.**
+Once you've followed the instructions above, open Xcode, and select the RSDKv3 target. Then, **change the deployment target to the recommended OS version** and build the project by pressing the "Run" button or (⌘+B). The app will then be created in `~/Library/Developer/Xcode/DerivedData/RSDKv3-[and a whole bunch of letters]/Build/Products/Release/RSDKv3.app`. **Press (⌘+⇧+.) to see the `~/Library` folder.**
 
 ### Command Line Tools:
-If you want to use the **Command Line Tools** instead, run the following command: `xcodebuild -project RSDKv3.xcodeproj -scheme RSDKv3 DSTROOT="./build" -configuration Release DEPLOYMENT_LOCATION=YES`. The app will then be created in `[Home folder]/Library/Developer/Xcode/DerivedData/[RSDKv3-(and then a whole bunch of letters)]`. **Press (⌘+⇧+.) to see the `~/Library` folder.**
+If you want to use the **Command Line Tools** instead, run the following command: `xcodebuild -project RSDKv3.xcodeproj -scheme RSDKv3 DSTROOT="./build" -configuration Release DEPLOYMENT_LOCATION=YES`. The app will then be created in `~/RSDKv3-Decompilation/build/Applications/RSDKv3.app`.
 
 ### Build flags for the Command Line Tools
 To add flags into your build command, use: `OTHER_CFLAGS=` at the end of your build command, for example: `xcodebuild -project RSDKv3.xcodeproj -scheme RSDKv3 DSTROOT="./build" -configuration Release DEPLOYMENT_LOCATION=YES OTHER_CFLAGS="-DRETRO_DEV_EXTRA=\\\"Darwin\\ -\\ AppleClang\\\""`.
