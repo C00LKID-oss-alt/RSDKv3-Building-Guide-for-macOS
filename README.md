@@ -7,9 +7,14 @@ This is a guide on how to build RSDKv3 on **macOS** since I can't find any video
 * **Command Line Tools**: Open Terminal, copy and paste this: `xcode-select --install`.
 
 ## Cloning the repository
-Open Terminal, copy and paste this in Terminal: `git clone --recursive https://github.com/RSDKModding/RSDKv3-Decompilation`.
-
-But if you already cloned the repo before and it's not deleted then copy and paste this in the root of the repo folder: `git submodule update --init --recursive`.
+Open Terminal, copy and paste this in Terminal:
+```bash
+git clone --recursive https://github.com/RSDKModding/RSDKv3-Decompilation
+```
+But if you already cloned the repo before and it's not deleted then copy and paste this in the root of the repo folder:
+```bash
+git submodule update --init --recursive
+```
 
 ## Getting the dependencies
 * **SDL2**: [Download](https://github.com/libsdl-org/SDL/releases/tag/release-2.32.10) it as a **.dmg** file. Then open the .dmg file and move the SDL2.framework to `[root of repo]/dependencies/mac/`.
@@ -25,26 +30,32 @@ But if you already cloned the repo before and it's not deleted then copy and pas
 At the end, it should look like this.
 
 ## Compiling the game
-### Xcode:
+### <ins>Xcode:</ins>
 Once you've followed the instructions above, open Xcode, and select the RSDKv3 target. Then, **change the deployment target to the recommended OS version**:
 
 <img src="https://github.com/C00LKID-oss-alt/RSDKv3-Building-Guide-for-macOS/blob/main/images/deployment-target.png" width="600">
 
 And then, build the project by pressing the "Run" button or (⌘+B). The app will then be created in `~/Library/Developer/Xcode/DerivedData/RSDKv3-[and a whole bunch of letters]/Build/Products/Release/RSDKv3.app`.**Press (⌘+⇧+.) to see the `~/Library` folder in your home folder.**
 
-### Command Line Tools:
+### <ins>Command Line Tools:</ins>
 Before, it's best you **change the deployment target to the recommended OS version** in Xcode first.
 
-Now, If you want to use the **Command Line Tools** instead, run the following command: `xcodebuild -project RSDKv3.xcodeproj -scheme RSDKv3 DSTROOT="./build" -configuration Release DEPLOYMENT_LOCATION=YES`. The app will then be created in `~/RSDKv3-Decompilation/build/Applications/RSDKv3.app`.
+Now, If you want to use the **Command Line Tools** instead, run the following command:
+```bash
+xcodebuild -project RSDKv3.xcodeproj -scheme RSDKv3 DSTROOT="./build" -configuration Release DEPLOYMENT_LOCATION=YES
+```
+The app will then be created in `~/RSDKv3-Decompilation/build/Applications/RSDKv3.app`.
 
-### Build flags for the Command Line Tools:
-To add flags into your build command, use: `OTHER_CFLAGS=` at the end of your build command, for example: `xcodebuild -project RSDKv3.xcodeproj -scheme RSDKv3 DSTROOT="./build" -configuration Release DEPLOYMENT_LOCATION=YES OTHER_CFLAGS="-DRETRO_DEV_EXTRA=\\\"Darwin\\ -\\ AppleClang\\\""`.
+### <ins>Build flags for the Command Line Tools:</ins>
+To add flags into your build command, use: `OTHER_CFLAGS=` at the end of your build command, for example:
+```bash
+xcodebuild -project RSDKv3.xcodeproj -scheme RSDKv3 DSTROOT="./build" -configuration Release DEPLOYMENT_LOCATION=YES OTHER_CFLAGS="-DRETRO_DEV_EXTRA=\\\"Darwin\\ -\\ AppleClang\\\""
+```
 
-**A list of build flags can be found [here](https://github.com/RSDKModding/RSDKv3-Decompilation/blob/master/dependencies/mac/README.md#customization).**
+> **A list of build flags can be found [here](https://github.com/RSDKModding/RSDKv3-Decompilation/blob/master/dependencies/mac/README.md#customization).
+Also if you want to use the Origins Data files on the decomp, check [this](https://gamebanana.com/tuts/16686).**
 
-**Also if you want to use the Origins Data files on the decomp, check [this](https://gamebanana.com/tuts/16686).**
-
-### I might change the repo later in the future.
+> ### I might change the repo later in the future.
 
  
 
