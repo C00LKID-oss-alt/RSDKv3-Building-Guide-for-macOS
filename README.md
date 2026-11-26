@@ -2,9 +2,9 @@
 This is a guide on how to build RSDKv3 on **macOS** since I can't find any videos or tutorial except for the RSDKv3-Decompilation repo but this tutorial will be much more easier for people to understand. I compiled it myself on macOS 27.3 Apple Silicon and can work for other Macs.
 
 ## Prerequisites
-**Xcode**: [Download](https://apps.apple.com/fr/app/xcode/id497799835?mt=12) it, and don't open it yet, we will need it for later.
+* **Xcode**: [Download](https://apps.apple.com/fr/app/xcode/id497799835?mt=12) it, and don't open it yet, we will need it for later.
 
-**Command Line Tools**: Open Terminal, copy and paste this: `xcode-select --install`.
+* **Command Line Tools**: Open Terminal, copy and paste this: `xcode-select --install`.
 
 ## Cloning the repository
 Open Terminal, copy and paste this in Terminal: `git clone --recursive https://github.com/RSDKModding/RSDKv3-Decompilation`.
@@ -37,12 +37,14 @@ Before, it's best you **change the deployment target to the recommended OS versi
 
 Now, If you want to use the **Command Line Tools** instead, run the following command: `xcodebuild -project RSDKv3.xcodeproj -scheme RSDKv3 DSTROOT="./build" -configuration Release DEPLOYMENT_LOCATION=YES`. The app will then be created in `~/RSDKv3-Decompilation/build/Applications/RSDKv3.app`.
 
-### Build flags for the Command Line Tools
+### Build flags for the Command Line Tools:
 To add flags into your build command, use: `OTHER_CFLAGS=` at the end of your build command, for example: `xcodebuild -project RSDKv3.xcodeproj -scheme RSDKv3 DSTROOT="./build" -configuration Release DEPLOYMENT_LOCATION=YES OTHER_CFLAGS="-DRETRO_DEV_EXTRA=\\\"Darwin\\ -\\ AppleClang\\\""`.
 
 **A list of build flags can be found [here](https://github.com/RSDKModding/RSDKv3-Decompilation/blob/master/dependencies/mac/README.md#customization).**
 
 **Also if you want to use the Origins Data files on the decomp, check [this](https://gamebanana.com/tuts/16686).**
+
+### I might change the repo later in the future.
 
  
 
