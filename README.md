@@ -4,7 +4,10 @@ This is a guide on how to build RSDKv3 on **macOS** since I can't find any video
 ## Prerequisites
 * **Xcode**: [Download](https://apps.apple.com/fr/app/xcode/id497799835?mt=12) it, and don't open it yet, we will need it for later.
 
-* **Command Line Tools**: Open Terminal, copy and paste this: `xcode-select --install`.
+* **Command Line Tools**: Open Terminal, copy and paste this:
+```bash
+xcode-select --install
+```
 
 ## Cloning the repository
 Open Terminal, copy and paste this in Terminal:
@@ -35,7 +38,7 @@ Once you've followed the instructions above, open Xcode, and select the RSDKv3 t
 
 <img src="https://github.com/C00LKID-oss-alt/RSDKv3-Building-Guide-for-macOS/blob/main/images/deployment-target.png" width="600">
 
-And then, build the project by pressing the "Run" button or (⌘+B). The app will then be created in `~/Library/Developer/Xcode/DerivedData/RSDKv3-[and a whole bunch of letters]/Build/Products/Release/RSDKv3.app`.**Press (⌘+⇧+.) to see the `~/Library` folder in your home folder.**
+And then, build the project by pressing the "Run" button or (⌘+B). The app will then be created in `~/Library/Developer/Xcode/DerivedData/RSDKv3-[and a whole bunch of letters]/Build/Products/Release/RSDKv3.app`. **Press (⌘+⇧+.) to see the `~/Library` folder in your home folder.**
 
 ### <ins>Command Line Tools:</ins>
 Before, it's best you **change the deployment target to the recommended OS version** in Xcode first.
