@@ -58,7 +58,7 @@ xcodebuild -project RSDKv3.xcodeproj -scheme RSDKv3 DSTROOT="./build" -configura
 > **A list of build flags can be found [here](https://github.com/RSDKModding/RSDKv3-Decompilation/blob/master/dependencies/mac/README.md#customization).
 Also if you want to use the Origins Data files on the decomp, check [this](https://gamebanana.com/tuts/16686).**
 
-> ### I am planning on building RSDKv4 v1.3.3 for macOS later. I am this close this to finishing. I might need some help though.
+> ### Hello people, I really need help. Would someone be willing to help me in coding, troubleshooting on macOS because I am not very great at coding.
 
  
 
